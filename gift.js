@@ -29,7 +29,7 @@ function initengahan(){
   function bqhilang(){wallpaper.style="transform: scale(2);";bodyblur.style="opacity:.3";bq.style = "position:relative;transition:all .7s ease;";}
   function kethalo(){new TypeIt("#halo", {strings: ["" + vketikhalo], startDelay: 50, speed: 40, waitUntilVisible: true, afterComplete: function(){halo.innerHTML = vketikhalo;setTimeout(bqmuncul,200);},}).go();}
 
-  function tombol(){wallpaper.style="transform: scale(1);";Tombol.style="opacity:1;transform: scale(1);";if(fungsi==2){By.innerHTML="&#128140; Balas"}}
+  function tombol(){wallpaper.style="transform: scale(1);";Tombol.style="opacity:1;transform: scale(1);";if(fungsi==2){By.innerHTML="&#128140; Buka Kado"}}
   document.getElementById("By").onclick = function() {if(fungsi==1){Tombol.style="";fthilang();fungsi=0;pertanyaan();} if(fungsi==2){Tombol.style="";menuju();}}
   
   const waktuSekarang = new Date().getHours();let ucapan;
@@ -133,12 +133,11 @@ function initengahan(){
   },}).go();
   }
   function aktipesan10(){
-    // wallpaper.style="transform: scale(1.5);";
-    // fthilang();ftganti=5;setTimeout(ftmuncul,300);
-    // otoaktipesan=1;otomatis();setTimeout(toaktipesan,300);
-    // setInterval(berjatuhan,400);
-    // fungsi=2;setTimeout(tombol,2000);
-    window.location.href="flower.html";
+    wallpaper.style="transform: scale(1.5);";
+    fthilang();ftganti=5;setTimeout(ftmuncul,300);
+    otoaktipesan=1;otomatis();setTimeout(toaktipesan,300);
+    setInterval(berjatuhan,400);
+    fungsi=2;setTimeout(tombol,2000);
   }
   var otoaktipesan=0;
   function toaktipesan(){kalimat.innerHTML=vketik10;kalimat.style="transform:scale(1);font-size:24px;font-family:var(--gaya-font2)";}
